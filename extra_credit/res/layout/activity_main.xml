@@ -1,0 +1,50 @@
+<!-- 
+Author: Victor Malchikov
+FileName: activity_main.xml 
+ -->
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	>
+	
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|center"
+    android:text="@string/app_name"
+    />
+
+	<LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"
+    	>
+    
+   		<TextView 
+        	android:layout_height="match_parent" 
+        	android:layout_width="match_parent"
+        	android:text="@string/enter"
+        	android:gravity="center_horizontal"
+        	/>
+    
+    	<EditText
+        	android:id="@+id/tf"
+        	android:layout_height="match_parent" 
+        	android:layout_width="match_parent"
+        	android:hint="@string/hint"
+        	/>
+
+ 	</LinearLayout>
+
+	<TextView 
+	    android:id="@+id/results"
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	/>
+	
+</LinearLayout>
+

@@ -1,0 +1,19 @@
+<!-- 
+Author: Victor Malchikov
+FileName: strings.xml
+Objective: This file contains Strings used in the application.
+           You are able to see the variable names and 
+           the corresponding text. -->
+
+<resources>
+
+    <string name="app_name">HelloAndroid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_hello_android">HelloAndroid</string>
+    <string name="name">Victor Malchikov</string>
+    <string name="class_name">cs211D Fall 2012</string>
+    <string name="hello">Hello Android</string>
+    <string name="hw">Homework #1</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<!-- 
+Author: Victor Malchikov
+FileName: dimens.xml
+ -->
+ 
+ <resources>
+     <dimen name="title_size">28sp</dimen>
+     <dimen name="input_size">12sp</dimen>
+     <dimen name="result_size">12sp</dimen>
+ </resources>

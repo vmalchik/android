@@ -1,0 +1,9 @@
+<!-- 
+Author: Victor Malchikov
+FileName: styles.xml
+-->
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+</resources>

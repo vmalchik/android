@@ -1,0 +1,91 @@
+package com.cs211d.hw3;
+
+import com.cs211d.hw.R;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.RadioButton;
+
+public class TemperatureConverter extends Activity 
+{
+    private EditText input;
+    private EditText result;
+
+    
+    @Override
+    public void onCreate(Bundle savedInstanceState) 
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+   
+        result = (EditText)this.findViewById(R.id.calculated_result);
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) 
+    {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+    
+    //method to handle radio buttons
+    public void buttonSelectionHandler(View v)
+    {
+       
+       boolean selected = ((RadioButton) v).isChecked();
+       
+       switch(v.getId())
+       {
+          case R.id.celcius_to_fahrenheit:
+             if(selected)
+                getTempF();
+          break;
+          
+          case R.id.fahrenheit_to_celcius:
+             if(selected)
+                getTempC();
+          break;
+          
+          default: 
+             if(!selected)
+                result.setText("Enter Temperature");
+
+       }
+     
+    }
+    
+    //convert Celcius to Fahrenheit
+    private void getTempF()
+    {
+       input = (EditText)this.findViewById(R.id.input_temp);
+       //obtain input from user 
+       double tempC = Double.valueOf( input.getText().toString() );
+       //convert to Fahrenheit
+       Double tempF = (9.0/5.0)*(tempC+32.0);
+       String tempFs = tempF.toString();
+       //return result
+       result.setText(tempFs);
+       
+    }
+    
+  //convert Fahrenheit to Celcius 
+    private void getTempC()
+    {
+       input = (EditText)this.findViewById(R.id.input_temp);
+       //obtain input from user 
+       double tempF = Double.valueOf( input.getText().toString() );
+       //convert to Celcius
+       Double tempC = (5.0/9.0)*(tempF-32.0);
+       String tempCs = tempC.toString();
+       //return result
+       result.setText(tempCs);
+
+    }
+
+
+}

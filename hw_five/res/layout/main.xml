@@ -1,0 +1,80 @@
+<!-- 
+Author: Victor Malchikov
+FileName: main.xml 
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/launcher"
+        android:layout_gravity="center|top"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/title_size"
+        />
+              
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_one"
+        android:paddingTop="24dp"
+        android:layout_gravity="left"
+        />
+    
+    <RadioGroup 
+    	android:layout_width="wrap_content" 
+     	android:layout_height="wrap_content"
+     	android:layout_gravity="center_vertical|center_horizontal|center"
+     	android:paddingTop="30dp"
+    	>
+
+     	 <RadioButton
+     	    android:id="@+id/google_map"
+     	    android:text="@string/map"
+     	    android:checked="true"
+     	    android:onClick="onRadioButtonClicked"
+     	 	/>
+     	
+     	 <RadioButton
+     	    android:id="@+id/call_phone"
+     	    android:text="@string/dial"
+     	    android:onClick="onRadioButtonClicked"
+     	 	/>
+     	 
+     	<RadioButton
+     	    android:id="@+id/internet"
+     	    android:text="@string/web"  
+     	    android:onClick="onRadioButtonClicked" 
+     	 	/>
+     	
+    </RadioGroup>    
+	
+
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent" 
+    	android:orientation="horizontal"
+    	>
+     	
+        <TextView
+       		android:layout_width="wrap_content" 
+     		android:layout_height="wrap_content"
+			android:paddingTop="30dp"
+			android:text="@string/prompt_three"
+			/>
+        
+        <EditText 
+            android:id="@+id/input"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+           
+            />
+        
+   </LinearLayout>
+     	
+</LinearLayout>

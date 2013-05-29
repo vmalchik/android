@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <string name="app_name">HelloAndroid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Main</string>
+    <string name="name">Victor Malchikov</string>
+    <string name="class_name">cs211D Fall 2012</string>
+    <string name="hello">Hello Android</string>
+    <string name="hw">Homework #1</string>
+
+</resources>
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="green">#008000</color>
+</resources>
+
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ 
+    <TextView
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:textColor="@color/orange"
+    	android:text="@string/hello"   />  
+       
+    <TextView
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/blue"
+    	android:text="@string/name"   />
+    	
+    <TextView
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/green"
+    	android:text="@string/class_name"   />
+        
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:text="@string/hw"   />
+    
+</LinearLayout>
+
+
+        TextView tv = (TextView)this.findViewById(R.id.text1);
+       
+        tv.setText("try this instead");
+		
+		
+		You can define ids using an ids.xml file in your res/values directory. Here's an example:
+
+<resources>
+    <item type="id" name="my_keyboard" />
+</resources>
+In code, you would set the id like so:
+
+keyboardView.setId( R.id.my_keyboard );

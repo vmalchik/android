@@ -1,0 +1,209 @@
+       File sdcard = Environment.getExternalStorageDirectory();
+       File sdcardc = new File(sdcard + "/StateGame");
+       if(sdcardc.exists())
+       {
+          Log.i(menu, sdcardc.toString());
+       }
+       File dir = new File(sdcard.getAbsolutePath() + "/StateGame/US_states.txt");
+       Log.i(menu, dir.toString());
+       String adb = "adb";
+       String cmd = "push";
+       String ldir = "US_states.txt";
+       String rdir = dir.getAbsolutePath();
+       if(!dir.isFile())
+       {
+         
+         try
+         {
+            Log.i(menu, "pushed file");
+            Process pb;
+            pb = new ProcessBuilder(adb, cmd, ldir, rdir).start();
+           // pb = new ProcessBuilder("adb", "ls", sdcard.getAbsolutePath()).start();
+         } 
+         catch (IOException e)
+         {
+            Log.i(menu, "Attempting to push US_states.txt not successful");
+            e.printStackTrace();
+         }
+       }
+      // Log.i(menu, "file exists");
+       //dir = new File(sdcard.getAbsolutePath() + "/StateGame/scores.txt");
+       if(!dir.exists())
+       {
+          Log.i(menu, "still does not exist");
+       }
+       ArrayList<String> a = new ArrayList<String>();
+       //Process pb;
+       //pb = new ProcessBuilder(
+       try
+       {
+         Scanner sc = new Scanner(new File(dir.getAbsolutePath()));
+         while(sc.hasNext())
+         {
+            a.add(sc.next());
+         }
+         for(int i = 0; i < a.size(); i++)
+         {
+              Log.i(menu, a.get(i));
+         }
+      } 
+      catch (FileNotFoundException e)
+      {
+         Log.i(menu, "no file exists Us_states.txt");
+         e.printStackTrace();
+      }
+	  
+	  *******************
+	  
+	         try
+       {
+         Scanner sc = new Scanner(dir);
+         while(sc.hasNext())
+         {
+            a.add(sc.nextLine());
+         }
+         for(int i = 0; i < a.size(); i++)
+         {
+              Log.i(menu, a.get(i));
+         }
+      } 
+      catch (FileNotFoundException e)
+      {
+         Log.i(menu, "no file exists Us_states.txt");
+         e.printStackTrace();
+      }
+	  
+	  *************
+	  
+	    Context con = getApplicationContext();
+        
+        String state = Environment.getExternalStorageState();
+        //check if system has an SD card
+        if(Environment.MEDIA_MOUNTED.equals(state))
+        {
+           sAvail = sWritable = true;
+           Log.i(menu, "avail + write");
+        }
+        else if (Environment.MEDIA_MOUNTED_READ_ONLY.equals(state))
+        {
+           sAvail = true;
+           sWritable= false;
+           //No write permission
+           Toast msg = Toast.makeText(con, "No W Permission", Toast.LENGTH_LONG);
+           msg.show();
+        }
+        else
+        {
+           //No read permission
+           sAvail = sWritable = false;
+           Toast msg = Toast.makeText(con, "No RW Permission", Toast.LENGTH_LONG);
+           msg.show();
+        }
+        
+		*********
+		   <LinearLayout 
+     	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+    	android:layout_gravity="left">
+    	
+         <TextView 
+             android:id="@+id/state_one"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             />
+         
+         <EditText 
+             android:id="@+id/answer_one"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:hint="@string/hint_capital"
+             />
+         
+         <TextView 
+             android:id="@+id/state_two"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+          
+             />
+         
+         <EditText 
+             android:id="@+id/answer_two"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:hint="@string/hint_capital"
+             />
+        
+    	
+      </LinearLayout>
+              
+			  
+			  
+************************
+
+
+
+   private void store(HashMap<String, String> map, String tmp)
+   {
+     // Log.i(gameMenu, "Before: " + tmp);
+      //tmp = tmp.replace(" ", ",");
+     //  Log.i(gameMenu, "After: " + tmp);
+     // String parts[] = tmp.split(",", 20);
+     // tmp = "Oklahoma                Oklahoma City";
+      ArrayList<String> a = new ArrayList<String>();
+      tmp = tmp.trim();
+      
+    
+      String tmpFirstWord = tmp.substring(0, tmp.indexOf(" "));
+      a.add(tmpFirstWord);
+    //  Log.i(gameMenu, "first word: " + tmpFirstWord);
+      
+      int firstSpace = tmp.indexOf(" ");
+      tmp = tmp.substring(firstSpace+1, tmp.length());
+      tmp = tmp.trim();
+      tmp = tmp + " ";
+     // Log.i(gameMenu, "post first word add: " + tmp);
+   
+      for(int i = 0; i < a.size(); i++)
+      {
+         if(tmp.startsWith(" "))
+            break;
+         String nextWord = tmp.substring(0, tmp.indexOf(" "));
+         a.add(nextWord);
+     //    Log.i(gameMenu, "added is " + nextWord);
+         int space = tmp.indexOf(" ");
+         tmp = tmp.substring(space, tmp.length());
+         tmp = tmp.trim();
+         tmp = tmp + " ";
+      //   Log.i(gameMenu, "next to be added " + tmp);
+      }
+      
+      for(int i = 0; i<a.size(); i++)
+      {
+       //  Log.i(gameMenu, "looping over array: " + a.get(i) + " index + " + i);
+      }
+      String state = "";
+      String capital = "";
+      if( (a.get(0).equals("Washington")) || (a.get(0).equals("New")) || 
+          (a.get(0).equals("North")) || (a.get(0).equals("Rhode")) || 
+          (a.get(0).equals("South")) || (a.get(0).equals("West")) )
+      {
+         state = a.get(0)+ " " + a.get(1);
+        // Log.i(gameMenu, "fixing: " + a.get(0) + " " + a.get(1));
+         for(int i = 2; i < a.size(); i++)
+            capital += a.get(i) + " ";
+         capital = capital.trim();
+      }
+      else
+      {
+         state = a.get(0);
+         for(int i =1; i < a.size(); i++)
+            capital += a.get(i) + " ";
+         capital = capital.trim();
+      }
+      
+      Log.i(gameMenu, state + "- " + capital);
+      map.put(state, capital);
+      
+   
+   }

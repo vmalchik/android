@@ -1,0 +1,13 @@
+<!-- 
+Author: Victor Malchikov
+FileName: color.xml
+Objective: This file contains colors used in the application.
+           You are clearly able to see the variable names and 
+           the corresponding code for the colors. -->
+
+<resources>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="green">#008000</color>
+</resources>

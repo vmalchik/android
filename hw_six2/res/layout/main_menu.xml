@@ -1,0 +1,101 @@
+<!-- 
+Author: Victor Malchikov
+FileName: main_menu.xml 
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_title"
+        android:layout_gravity="top|center"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/blue"
+        android:paddingTop="20dp"
+    />
+    
+     <TextView 
+    	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+        android:text="@string/prompt"
+        android:textSize="@dimen/prompt_size"
+        android:textColor="@color/red"   
+        android:layout_gravity="center"
+        android:paddingTop="50dp"
+    />
+     
+    <LinearLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+    	android:layout_gravity="center_vertical|center_horizontal">
+    	
+    	
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first"
+            android:gravity="center"
+            />
+        
+        <EditText
+            android:id="@+id/user_first"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:inputType="text" 
+           	android:hint="@string/hint_first_name"
+           	/>
+         
+     </LinearLayout>
+     
+     <LinearLayout 
+     	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+    	android:layout_gravity="center_vertical|center_horizontal">
+    	
+    	
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last"
+            android:gravity="center"
+            />
+        
+        <EditText
+            android:id="@+id/user_last"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:inputType="text" 
+           	android:hint="@string/hint_last_name"
+           	/>
+         
+      </LinearLayout>
+      
+      <Button 
+          android:id="@+id/start_game"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/prompt_start_game"
+          android:layout_gravity="center"
+          android:translationY="50dp"
+          android:onClick="buttonHandler"
+          
+          />
+      
+      <Button 
+          android:id="@+id/quit_game"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/prompt_quit_game"
+          android:layout_gravity="center"
+          android:translationY="50dp"
+          android:onClick="buttonHandler"
+          />
+          
+
+</LinearLayout>

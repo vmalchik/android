@@ -1,0 +1,28 @@
+<!-- 
+Author: Victor Malchikov
+FileName: strings.xml
+ -->
+
+<resources>
+
+    <string name="app_name">StatesGame</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="game_title">US States Game</string>
+    <string name="prompt">Please Enter Your Name</string>
+    <string name="first">First:</string>
+    <string name="hint_first_name">Enter Your First Name</string>
+    <string name="last">Last:</string>
+    <string name="hint_last_name">Enter Your Last Name</string>
+    <string name="prompt_start_game">Start</string>
+    <string name="prompt_quit_game">Quit</string>
+    <string name="hint_state">Enter Name of State</string>
+    <string name="hint_capital">Enter Name of Capital</string>
+    <string name="states">States:</string>
+    <string name="capitals">Capitals:</string>
+    <string name="score">Score</string>
+    <string name="prompt_players">Top 10 Players </string>
+    <string name="prompt_scores">Scores</string>
+
+</resources>

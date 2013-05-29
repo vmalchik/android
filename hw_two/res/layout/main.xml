@@ -1,0 +1,45 @@
+<!-- 
+Author: Victor Malchikov
+FileName: main.xml
+Objective: This file takes care of entire layout of application.
+ -->
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/msg"
+        />
+    
+    <Button android:id="@+id/time_button"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="@string/time"
+        android:onClick="buttonHandler"
+        />
+    
+    <Button android:id="@+id/date_button"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="@string/date"
+        android:onClick="buttonHandler"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/current_time_date"
+        
+        />
+     
+    
+</LinearLayout>

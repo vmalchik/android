@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ 
+    <TextView
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:textColor="@color/orange"
+    	android:text="@string/hello"   />  
+       
+    <TextView
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/blue"
+    	android:text="@string/name"   />
+    	
+    <TextView
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/green"
+    	android:text="@string/class_name"   />
+        
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:text="@string/hw"   />
+    
+</LinearLayout>

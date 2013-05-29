@@ -1,0 +1,12 @@
+<!-- 
+Author: Victor Malchikov
+FileName: dimens.xml
+ -->
+ 
+ <resources>
+     <dimen name="title_size">20sp</dimen>
+     <dimen name="input_size">12sp</dimen>
+     <dimen name="result_size">12sp</dimen>
+     <dimen name="prompt_size">14sp</dimen>
+     <dimen name="game_size">14sp</dimen>
+ </resources>

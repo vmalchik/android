@@ -1,0 +1,295 @@
+<!-- 
+Author: Victor Malchikov
+FileName: score_display.xml 
+ -->
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   
+    <LinearLayout 
+     	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+    	android:layout_gravity="left">
+    	
+    	
+        <TextView
+        	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:text="@string/prompt_scores"
+    		android:textColor="@color/blue"
+    		android:paddingTop="10dp"
+    		android:paddingLeft="7dp"
+    		android:textSize="@dimen/game_size"
+    		/>
+    	
+    	<TextView
+        	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:text="@string/prompt_players"
+    		android:textColor="@color/blue"
+    		android:translationX="50dp"
+    		android:textSize="@dimen/game_size"
+    		/>
+    	
+
+   	</LinearLayout>
+   	 	
+   	<!-- ************************TOP 5********************** -->	      
+    <LinearLayout 
+     	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+    	android:layout_gravity="left">
+    	
+    	
+         <TextView 
+             android:id="@+id/top_one"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/game_size"
+             android:paddingLeft="7dp"
+             />
+         
+         <TextView 
+             android:id="@+id/score_one"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="85dp"
+             android:textSize="@dimen/game_size"
+             />
+         
+     </LinearLayout>
+    
+     <LinearLayout 
+     	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+    	android:layout_gravity="left">
+    	
+         <TextView 
+             android:id="@+id/top_two"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/game_size"
+             android:paddingLeft="7dp"
+             />
+         
+         <TextView 
+             android:id="@+id/score_two"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="85dp"
+             android:textSize="@dimen/game_size"
+             />
+         
+      </LinearLayout>
+      
+       <LinearLayout 
+     		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:orientation="horizontal"
+    		android:layout_gravity="left">
+    	
+          <TextView 
+             android:id="@+id/top_three"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/game_size"
+             android:paddingLeft="7dp"
+             />
+         
+         <TextView 
+             android:id="@+id/score_three"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="85dp"
+             android:textSize="@dimen/game_size"
+             />
+         
+      </LinearLayout>
+      
+      <LinearLayout 
+     		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:orientation="horizontal"
+    		android:layout_gravity="left">
+    	
+         <TextView 
+             android:id="@+id/top_four"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/game_size"
+             android:paddingLeft="7dp"
+             />
+         
+         <TextView 
+             android:id="@+id/score_four"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="85dp"
+             android:textSize="@dimen/game_size"
+             />
+         
+      </LinearLayout>
+      
+      <LinearLayout 
+     		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:orientation="horizontal"
+    		android:layout_gravity="left">
+    	
+         <TextView 
+             android:id="@+id/top_five"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/game_size"
+             android:paddingLeft="7dp"
+             />
+         
+         <TextView 
+             android:id="@+id/score_five"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="85dp"
+             android:textSize="@dimen/game_size"
+             />
+         
+    </LinearLayout>
+  
+ <!-- ************************TOP 6 - 10********************** -->	
+     
+    <LinearLayout 
+     	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+    	android:layout_gravity="left">
+    	
+         <TextView 
+             android:id="@+id/top_six"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/game_size"
+             android:paddingLeft="7dp"
+             />
+         
+         <TextView 
+             android:id="@+id/score_six"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="85dp"
+             android:textSize="@dimen/game_size"
+             />
+         
+      </LinearLayout>
+    
+     <LinearLayout 
+     	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+    	android:layout_gravity="left">
+    	
+         <TextView 
+             android:id="@+id/top_seven"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/game_size"
+             android:paddingLeft="7dp"
+             />
+         
+         <TextView 
+             android:id="@+id/score_seven"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="85dp"
+             android:textSize="@dimen/game_size"
+             />
+         
+      </LinearLayout>
+      
+       <LinearLayout 
+     		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:orientation="horizontal"
+    		android:layout_gravity="left">
+    	
+         <TextView 
+             android:id="@+id/top_eight"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/game_size"
+             android:paddingLeft="7dp"
+             />
+         
+         <TextView 
+             android:id="@+id/score_eight"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="85dp"
+             android:textSize="@dimen/game_size"
+             />
+         
+      </LinearLayout>
+      
+      <LinearLayout 
+     		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:orientation="horizontal"
+    		android:layout_gravity="left">
+    	
+         <TextView 
+             android:id="@+id/top_nine"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/game_size"
+             android:paddingLeft="7dp"
+             />
+         
+         <TextView 
+             android:id="@+id/score_nine"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="85dp"
+             android:textSize="@dimen/game_size"
+             />
+         
+      </LinearLayout>
+      
+      <LinearLayout 
+     		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:orientation="horizontal"
+    		android:layout_gravity="left">
+    	
+         <TextView 
+             android:id="@+id/top_ten"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/game_size"
+             android:paddingLeft="7dp"
+             />
+         
+         <TextView 
+             android:id="@+id/score_ten"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="85dp"
+             android:textSize="@dimen/game_size"
+             />
+         
+      </LinearLayout>
+      
+      <Button 
+          android:id="@+id/quit_game"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/prompt_quit_game"
+          android:layout_gravity="center"
+          android:translationY="50dp"
+          android:onClick="buttonHandler"
+          />
+    
+</LinearLayout>

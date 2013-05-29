@@ -1,0 +1,19 @@
+Android SDK Tools
+C:\Users\Victor\AppData\Local\Android\android-sdk
+
+modified path:
+C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;%CommonProgramFiles%\Microsoft Shared\Windows Live;c:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Users\Victor\AppData\Local\Android\android-sdk\tools;C:\Users\Victor\AppData\Local\Android\android-sdk\platform-tools;%JAVA_HOME%\bin
+
+added:
+C:\Users\Victor\AppData\Local\Android\android-sdk\platform-tools;
+C:\Users\Victor\AppData\Local\Android\android-sdk\tools;
+
+workbench: 
+C:\Users\Victor\Desktop\Word Documents\android
+
+Old path:
+C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;%CommonProgramFiles%\Microsoft Shared\Windows Live;c:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files (x86)\QuickTime\QTSystem\;%JAVA_HOME%\bin
+
+
+SDK Location:
+C:\Users\Victor\AppData\Local\Android\android-sdk
